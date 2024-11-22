@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+}
+
+header .logo img {
+    width: 100px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header .search-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+}
+
+header .search-form input {
+    padding: 5px;
+    border: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.banner {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f3f3f3;
+}
+
+.banner h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.banner p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.produtos {
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; 
+}
+
+.produto {
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.produto p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.produto span {
+    font-size: 16px;
+    color: #777;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .produto {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .produto {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.imagem-sobre {
+    width: 100%;
+    max-height: 700px; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
+}
+
+h4 {
+    font-size: 14px; /* Reduz o tamanho do texto */
+    text-align: center; /* Centraliza o texto */
+    line-height: 1.6; /* Melhora o espaçamento entre as linhas */
+    color: #333; /* Ajusta a cor para um tom suave */
+    margin: 20px auto; /* Adiciona espaçamento ao redor */
+    max-width: 800px; /* Limita a largura do texto para melhorar a legibilidade */
+}
+
